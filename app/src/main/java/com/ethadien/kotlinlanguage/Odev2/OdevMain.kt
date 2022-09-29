@@ -15,7 +15,7 @@ fun main() {
     println("Faktöriyel hesabınızın sonucu: $factorial")
 
     // Soru 4
-    funcs.LetterCount("Merhaba", 'e')
+    funcs.LetterCount("aaaaaaaaa", 'a')
 
     // Soru 5
     val sumOfInternalAngles = funcs.InternalAngleSum(6)

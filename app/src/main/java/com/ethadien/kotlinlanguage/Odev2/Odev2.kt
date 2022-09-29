@@ -27,9 +27,10 @@ class Odev2 {
     }
 
     fun LetterCount(word:String, letter:Char){
+        val text = word.lowercase()
         var letterCounter = 0
-        for (i in 0..word.length-1){
-            if (letter == word[i].toChar()){
+        for (element in text){
+            if (letter == element.toChar()){
                 letterCounter++
             }
         }
