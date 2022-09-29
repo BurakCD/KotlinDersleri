@@ -1,6 +1,12 @@
 package com.ethadien.kotlinlanguage.nesne_tabanli
 
-class Car(var color:String, var speed:Int, var isWorking:Boolean) {
+data class Car(var color:String,
+               var speed:Int,
+               var isWorking:Boolean) {
+
+    init {
+        println("Yeni araba nesnesi oluşturuldu!")
+    }
 
     fun run(){// side effect denir
         isWorking = true
@@ -10,8 +16,12 @@ class Car(var color:String, var speed:Int, var isWorking:Boolean) {
         isWorking = false
     }
 
-    fun accelerate(){
-        speed += 5
+    fun accelerate(addSpeed:Int){
+        speed += addSpeed
+    }
+
+    fun slowDown(popSpeed:Int) {
+        speed -= popSpeed
     }
 
     fun getInfo(){
